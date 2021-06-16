@@ -12,6 +12,6 @@ export class ParseIntPipe implements PipeTransform {
     if (isNaN(val)) {
       throw new BadRequestException(`${value} is not a number`);
     }
-    return value;
+    return val;
   }
 }

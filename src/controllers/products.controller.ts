@@ -60,7 +60,7 @@ export class ProductsController {
   }
 
   @Put(':id')
-  update(@Param('id') id: number, @Body() payload: UpdateProductDto) {
+  update(@Param('id', ParseIntPipe) id: number, @Body() payload: UpdateProductDto) {
     /* return {
       message: 'accion de actualizar',
       id,
